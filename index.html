@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>What movie to watch</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <script src="https://kit.fontawesome.com/979378bc0b.js" crossorigin="anonymous"></script>
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+    crossorigin="anonymous"/>
+    <link rel="icon" href="assets/favicon.png"/>
+  </head>
+  <body>
+    <section class="hero is-warning is-responsive level-item has-text-centered">
+      <div class="container">
+        <div class="hero-body">
+          <p class="title py-3">
+            Pick a genre to randomly pick a movie!
+          </p>
+          <p class="subtitle py-3">
+            Need help choosing what to watch tonight? Let us help! 
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="genre">
+      <div class="container py-3">
+        <h2 class="title level-item has-text-centered is-3">Which genre are you feeling?</h2>
+        <div class="buttons level-item has-text-centered">
+          <button id="action" class="button is-link is-large is-responsive" type="button">Action<i class="fa-solid fa-people-robbery"></i></button>
+          <button  id="horror" class="button is-danger is-large is-responsive" type="button">Horror<i class="fa-solid fa-skull-crossbones"></i></i></button>
+          <button id="mystery" class="button is-success is-large is-responsive" type="button">Mystery<i class="fa-solid fa-user-ninja"></i></button>
+          <button id="comedy" class="button is-primary is-large is-responsive" type="button">Comedy<i class="fa-solid fa-face-laugh-squint"></i></i></button>
+        </div>
+      </div> 
+    </section>  
+
+
+    
+
+    
+    <!--this bit here embeds a youtube video-->
+    <!--TODO: change src to top search result(?) of city name-->
+    <div class="level-item has-text-centered is-responsive py-3">
+      <iframe id="youtube-video-one"
+          width="640" height="360"
+          src="assets/placeholder.png"
+          frameborder="0"
+          style="border: solid 4px #37474F">
+      </iframe>
+    </div>
+
+    <section>
+      <div id="movieInfo" class="card m-3 is-responsive py-3">
+      </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="assets/index.js"></script>
+  </body>
+
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        This fun randomizer was brought to you by <strong>Angel, Carter, and Carrie</strong>. Thanks for stopping by!
+      </p>
+    </div>
+  </footer>
+
+</html>
